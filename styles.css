@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    color: #333;
+    height: 300px;
+  }
+  
+  header {
+    background-color:#333;
+    
+    
+    padding: 50px;
+    text-align: center;
+    height: 100px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-flex;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .slideshow-container {
+    width: 100%;
+    
+
+    box-shadow: 5px 10px 15px black;
+    
+    
+
+    
+        position: relative;
+    margin: auto;
+   
+  }
+  
+  .slides {
+    display: flex;
+    
+  }
+  
+  .slides img {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .fade {
+    animation: fade 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  #about, #services, #projects, #contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  .service-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .service-item {
+    width: 30%;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+  }
+  
+  .service-item i {
+    font-size: 40px;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .gallery img {
+    box-shadow: 5px 5px 20px black;
+    width: 30%;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .gallery img.zoom-in:hover {
+    transform: scale(1.1);
+    
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #444;
+    box-shadow: 5px 5px 20px black;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .service-list, .gallery {
+      flex-direction: column;
+    }
+  
+    .service-item, .gallery img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  .contact:hover {
+    text-align: center;
+    box-shadow: 2px 2px 15px gray;
+  }
